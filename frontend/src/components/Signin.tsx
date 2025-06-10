@@ -18,6 +18,7 @@ export const Signin = () => {
                 username,
                 password
             }, {
+                //different than backend
                 withCredentials: true,
             });
             alert("you are logged in")
