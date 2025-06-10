@@ -26,6 +26,7 @@ app.post("/signin", (req, res) => {
     res.send("Logged in!");
 });
 
+//it will come by default
 app.get("/user", (req, res) => {
     const token = req.cookies.token;
     const decoded = jwt.verify(token, JWT_SECRET) as JwtPayload;
