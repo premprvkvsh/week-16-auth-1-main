@@ -22,6 +22,7 @@ app.post("/signin", (req, res) => {
         id: 1
     }, JWT_SECRET);
     res.cookie("token", token);
+    // will put the cookie ein the set-cookie header
     res.send("Logged in!");
 });
 
